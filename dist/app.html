@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		#finishedPromise {
+			position: relative;
+		}
+
+		.illust {
+			padding-left: 100px;
+			width: 400px;
+			position: absolute;
+		}
+
+		.flowing {
+			position: absolute;
+			padding-left: 500px;
+			width: 0;
+			margin: 0;
+			font-size: 3vw;
+			font-weight: bold;
+			color: #ea0f9b;
+			white-space: nowrap;
+			overflow: hidden;
+			animation: flowing-anim 3s forwards linear;
+			animation-delay: 2.0s;
+		}
+
+		@keyframes flowing-anim {
+			0% {
+				width: 0%;
+			}
+
+			100% {
+				width: 100%;
+			}
+		}
+	</style>
+
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="finishedPromise">
+		<div>
+			<p class="flowing">あいうえお</p>
+			<p><a href="https://1-notes.com/css-display-text-in-a-flowing-manner-animation/" target="_blank"
+					rel="noopener"></a></p>
+		</div>
+		<div><img class="illust" id="elem" src="image/D.PNG" onclick="openDialog()"></div>
+	</div>
+
+
+	<script src="app.js"></script>
+</body>
+
+</html>
