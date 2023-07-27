@@ -26,8 +26,8 @@
 			color: #ea0f9b;
 			white-space: nowrap;
 			overflow: hidden;
-			animation: flowing-anim 3s forwards linear;
-			animation-delay: 2.0s;
+			animation: flowing-anim 2.0s forwards linear;
+			animation-delay: 1.9s;
 		}
 
 		@keyframes flowing-anim {
@@ -47,11 +47,17 @@
 <body>
 	<div id="finishedPromise">
 		<div>
-			<p class="flowing">あいうえお</p>
+			<p class="flowing">制作2023/06/11</p>
 			<p><a href="https://1-notes.com/css-display-text-in-a-flowing-manner-animation/" target="_blank"
 					rel="noopener"></a></p>
 		</div>
 		<div><img class="illust" id="elem" src="image/D.PNG" onclick="openDialog()"></div>
+		<div class="dialog-base" hidden="hidden">
+			<div class="dialog">
+				<p>詳細テキスト</p>
+				<button onclick="closeDialog()">閉じる</button>
+			</div>
+		</div>
 	</div>
 
 

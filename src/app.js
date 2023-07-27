@@ -1,8 +1,9 @@
 import anime from 'animejs/lib/anime.es.js';
 
-var finishedPromise = anime({
+anime({
 	targets: '#finishedPromise #elem',
 	translateX: 800,
 	delay: 1450,
 	easing: 'easeInOutSine'
 });
+
