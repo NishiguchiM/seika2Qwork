@@ -2,6 +2,11 @@ let isActive = true;
 let dialogBase = document.getElementsByClassName('dialog-base')[0];
 	console.log(dialogBase);
 
+let open = document.getElementById("openButton");
+open.onclick = openDialog;
+let close = document.getElementById("closeButton");
+close.onclick = closeDialog;
+
 function openDialog() {
 	dialogBase.removeAttribute("hidden");
 }
